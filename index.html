@@ -12,91 +12,94 @@
         .bg-gold { background-color: #d4af37; }
         .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .step-number { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; background: #d4af37; color: #000; border-radius: 50%; font-weight: bold; margin-left: 15px; }
+        
+        /* الرابط المباشر لصورتك لضمان ظهورها في كل مكان */
+        .intro-bg-image { 
+            background: linear-gradient(rgba(12, 26, 22, 0.85), rgba(12, 26, 22, 0.95)), url('https://raw.githubusercontent.com');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 <body class="overflow-x-hidden">
 
-    <!-- البداية: صورتكِ والهيبة -->
-    <header class="min-h-screen flex items-center justify-center relative px-6 py-20">
-        <div class="absolute inset-0 z-0">
-            <img src="https://raw.githubusercontent.com" class="w-full h-full object-cover opacity-20 filter blur-sm">
-        </div>
-        
+    <!-- القسم الأول: صورتكِ والهيبة -->
+    <header class="min-h-screen flex items-center justify-center relative px-6 py-20 intro-bg-image">
         <div class="max-w-6xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div class="text-right">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">اسمحيلي أشرح لكِ.. <br><span class="text-gold italic">كيف بدأت الحكاية؟</span></h1>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">اسمحيلي أشرح لكِ.. <br><span class="text-gold italic font-bold">كيف بدأت الحكاية؟</span></h1>
                 <p class="text-xl md:text-2xl text-gray-300 leading-relaxed mb-10 font-light">
                     أهلاً بكِ في عالمي.. أنا هيا اسكندراني، وهذه ليست مجرد شركة، بل هي رحلة 9 سنوات من البحث عن الصحة والحرية التي بدأت من مطبخي ووصلت بي إلى هذا المسرح.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#story" class="bg-gold text-black px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition">ابدأي القصة من هنا</a>
+                    <a href="#story" class="bg-gold text-black px-10 py-4 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition shadow-yellow-600/20">ابدأي القصة من هنا</a>
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="https://raw.githubusercontent.com" class="w-80 md:w-[450px] rounded-3xl shadow-2xl border-2 border-gold transform rotate-2">
+                <!-- صورة المسرح واضحة جداً هنا -->
+                <img src="https://raw.githubusercontent.com" alt="هيا اسكندراني على المسرح" class="w-80 md:w-[450px] rounded-3xl shadow-2xl border-2 border-gold transform rotate-2">
             </div>
         </div>
     </header>
 
-    <!-- المحطة الأولى: لماذا نحن هنا؟ -->
+    <!-- القسم الثاني: شرح "لماذا نحن هنا؟" -->
     <section id="story" class="max-w-5xl mx-auto py-24 px-6">
         <div class="glass-card p-10 md:p-16 rounded-[3rem]">
             <h2 class="text-3xl font-bold text-gold mb-10 border-r-8 border-gold pr-6">البداية: البحث عن "الأمان الصحي"</h2>
             <div class="space-y-8 text-lg md:text-xl text-gray-300 leading-relaxed">
                 <p>قبل 9 سنوات، كنتُ أماً تقلق على صحة عائلتها. كنتُ أرى الفواتير تخرج من محفظتي لمواد استهلاكية مليئة بالكيماويات، والنتيجة كانت نقصاً في الطاقة والمناعة.</p>
                 <p>في دكسن، وجدتُ "المعادلة الذهبية": منتجات طبيعية تعتمد على الفطر الريشي والاسبيرولينا، تعيد للجسم توازنه الطبيعي بعيداً عن أضرار الحياة الحديثة.</p>
-                <p class="text-white font-bold italic bg-white/5 p-6 rounded-xl">"اكتشفتُ أن كل منتج أستخدمه في بيتي هو إما عدو لصحتنا وميزانيتنا، أو صديق يبني مستقبلنا.. وأنا اخترت الأصدقاء."</p>
+                <p class="text-white font-bold italic bg-white/5 p-8 rounded-xl border-r-4 border-gold">"اكتشفي أن كل منتج تستخدمينه في بيتكِ هو إما عدو لصحتكِ وميزانيتكِ، أو صديق يبني مستقبلكِ.. وأنا اخترت الأصدقاء."</p>
             </div>
         </div>
     </section>
 
-    <!-- المحطة الثانية: سر الاستهلاك الحكيم (الشرح العميق) -->
-    <section class="max-w-6xl mx-auto py-24 px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- القسم الثالث: شرح نظام "الاستهلاك الحكيم" -->
+    <section class="max-w-6xl mx-auto py-24 px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
-            <h2 class="text-4xl font-bold text-gold mb-8 leading-tight font-title">ما هو "الاستهلاك الحكيم" <br>الذي أتحدث عنه؟</h2>
-            <p class="text-xl text-gray-400 mb-10">إليكِ سر نجاحي في 3 خطوات بسيطة، طبقتهُا وجعلتني رائدة أعمال عالمية:</p>
+            <h2 class="text-4xl font-bold text-gold mb-8 leading-tight">ما هو "الاستهلاك الحكيم" <br>الذي غيّر حياتي؟</h2>
+            <p class="text-xl text-gray-400 mb-10">إليكِ سر نجاحي في 3 خطوات عملية، طبقتها وأصبحتُ بفضل الله رائدة أعمال عالمية:</p>
             
-            <div class="space-y-8">
+            <div class="space-y-10">
                 <div class="flex items-start">
                     <div class="step-number">١</div>
                     <div>
-                        <h4 class="text-xl font-bold text-white mb-2 font-title">الاستبدال الذكي</h4>
-                        <p class="text-gray-400">بدلاً من شراء قهوة عادية أو معجون أسنان كيميائي، استبدليه بمنتج دكسن الطبيعي. أنتِ هنا لم تدفعي "زيادة"، بل وجهتِ مصروفكِ للمكان الصحيح.</p>
+                        <h4 class="text-2xl font-bold text-white mb-2">الاستبدال الذكي</h4>
+                        <p class="text-gray-400 text-lg leading-relaxed">بدلاً من شراء قهوة عادية أو معجون أسنان كيميائي، استبدليه بمنتج دكسن الطبيعي. أنتِ هنا لم تدفعي مالاً إضافياً، بل وجهتِ مصروفكِ الشهري للمكان الصحيح.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
                     <div class="step-number">٢</div>
                     <div>
-                        <h4 class="text-xl font-bold text-white mb-2 font-title">المشاركة الصادقة</h4>
-                        <p class="text-gray-400">عندما تشعرين بالنشاط والصحة، ستتحدثين عنها تلقائياً لصديقاتكِ وأهلكِ. دكسن تكافئكِ على هذه "الدعاية الشفهية" بعمولات مالية متنامية.</p>
+                        <h4 class="text-2xl font-bold text-white mb-2">المشاركة الصادقة</h4>
+                        <p class="text-gray-400 text-lg leading-relaxed">عندما تشعرين بالنشاط والفرق في صحتكِ، ستتحدثين عنها تلقائياً لصديقاتكِ. دكسن تكافئكِ على هذه "الدعاية الشفهية" بعمولات مالية متنامية.</p>
                     </div>
                 </div>
                 <div class="flex items-start">
                     <div class="step-number">٣</div>
                     <div>
-                        <h4 class="text-xl font-bold text-white mb-2 font-title">بناء الفريق (المشروع)</h4>
-                        <p class="text-gray-400">سأعلمكِ كيف تبنين فريقاً من السيدات الطموحات اللواتي يفعلن مثلكِ. هنا تتحول مشترياتكِ إلى دخل شهري عالمي يأتيكِ وأنتِ في منزلكِ.</p>
+                        <h4 class="text-2xl font-bold text-white mb-2">بناء الفريق العالمي</h4>
+                        <p class="text-gray-400 text-lg leading-relaxed">سأعلمكِ كيف تبنين فريقاً من السيدات الطموحات. هنا تتحول مشترياتكِ إلى دخل شهري يأتيكِ وأنتِ في منزلكِ وبجانب أبنائكِ.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-gold/10 p-10 rounded-[3rem] border border-gold/20 flex flex-col justify-center">
-            <h3 class="text-2xl font-bold text-gold mb-6 italic text-center">"تخيلي أن فاتورة السوبر ماركت التي كانت ترهقكِ، تصبح هي مصدر ثرائكِ!"</h3>
-            <p class="text-center text-gray-300 leading-relaxed">هذا هو السر الذي جعلني أقف على منصات التكريم الدولية، وأنا اليوم أفتح لكِ الباب لتدخلي معي في هذا العالم.</p>
-            <div class="mt-10 text-center">
-                <a href="https://morad1971.github.io" class="text-gold font-bold underline text-xl">اكتشفي تفاصيل البزنس هنا &larr;</a>
-            </div>
+        <div class="bg-gold/10 p-12 rounded-[3rem] border border-gold/20 text-center relative overflow-hidden">
+            <div class="absolute -top-10 -left-10 w-32 h-32 bg-gold opacity-10 rounded-full blur-2xl"></div>
+            <h3 class="text-2xl font-bold text-gold mb-8 italic leading-relaxed">"تخيلي أن فاتورة السوبر ماركت التي كانت ترهقكِ، تصبح هي مصدر ثرائكِ وصحتكِ!"</h3>
+            <p class="text-gray-300 leading-relaxed text-lg mb-10">هذا هو السر الذي جعلني أقف على منصات التكريم، وأنا اليوم أفتح لكِ الباب لتدخلي معي في هذا العالم الرائع.</p>
+            <a href="https://morad1971.github.io" class="text-gold font-bold underline text-xl hover:text-white transition">اكتشفي تفاصيل البزنس هنا &larr;</a>
         </div>
     </section>
 
-    <!-- الخاتمة: دعوة للعمل -->
-    <footer class="py-24 px-6 text-center bg-white/5">
-        <h2 class="text-3xl md:text-5xl font-bold mb-10 text-gold">هل أنتِ مستعدة لترك بصمتكِ معي؟</h2>
+    <!-- الخاتمة -->
+    <footer class="py-24 px-6 text-center bg-black/40">
+        <h2 class="text-3xl md:text-5xl font-bold mb-12 text-gold">هل أنتِ مستعدة لترك بصمتكِ معي؟</h2>
         <div class="flex flex-wrap justify-center gap-6">
-            <a href="https://morad1971.github.io" class="bg-gold text-black px-12 py-4 rounded-full font-bold text-xl shadow-2xl hover:scale-105 transition">أريد البدء الآن مجاناً</a>
+            <a href="https://morad1971.github.io" class="bg-gold text-black px-12 py-4 rounded-full font-bold text-xl shadow-2xl hover:scale-105 transition shadow-yellow-600/30">أريد البدء الآن مجاناً</a>
             <a href="https://morad1971.github.io" class="border-2 border-white/20 text-white px-12 py-4 rounded-full font-bold text-xl hover:bg-white/10 transition">العودة للرئيسية</a>
         </div>
-        <p class="mt-12 text-gray-500 italic">© 2026 هيا اسكندراني - رحلة الثقة والنجاح</p>
+        <p class="mt-16 text-gray-600 italic">© 2026 القائدة هيا اسكندراني - رحلة الثقة والنجاح المستمر</p>
     </footer>
 
 </body>
